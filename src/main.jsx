@@ -8,6 +8,7 @@ import Login from './pages/Login/index.jsx'
 
 import './index.css';
 import LadingPage from './pages/index.jsx';
+import ForgotPassword from './pages/ForgotPassword/index.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,8 +16,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route element={<App/>}>
         <Route path='/' element={<LadingPage/>}/>
-        <Route path='/Home' element={<Home/>} />
-        <Route path='login' element={<Login/>} />
+        <Route path='/home' element={<Home/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/forgot-password' element={<ForgotPassword/>} />
       </Route>
     </Routes>
     </BrowserRouter>
