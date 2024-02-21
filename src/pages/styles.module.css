@@ -52,6 +52,7 @@ header {
 
 .reserse{
   flex-flow: row-reverse;
+  background-color: blueviolet;
 }
 
 .infoContainer{
