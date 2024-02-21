@@ -15,6 +15,8 @@ function LoginContent () {
         <label htmlFor=""> Senha</label>
         <input type="text" />
         <Link to="/forgot-password">esqueceu a senha?</Link>
+        <Link to="/home">Login</Link>
+
       </div>
 
       <div>
