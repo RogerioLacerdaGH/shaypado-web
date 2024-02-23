@@ -2,24 +2,15 @@ import styles from "./styles.module.css"
 import perfil from "../../assets/profire-300x300.png"
 
 const StudentCards = () =>{
-  return(
+  const nomeAlunos = ["aluno1","aluno2","aluno3","aluno4"]
+    return(
     <div className={styles.all}>
-      <div>
-        <img src={perfil} alt="perfil" />
-        <h3>Nome do cara</h3>
+      {nomeAlunos.map( (aluno) => (
+        <div>
+          <img src={perfil} alt="aluno" />
+          <h3>{aluno}</h3>
       </div>
-      <div>
-        <img src={perfil} alt="perfil" />
-        <h3>Nome do cara</h3>
-      </div>
-      <div>
-        <img src={perfil} alt="perfil" />
-        <h3>Nome do cara</h3>
-      </div>
-      <div>
-        <img src={perfil} alt="perfil" />
-        <h3>Nome do cara</h3>
-      </div>
+      ))}
     </div>
   );
 }

@@ -18,10 +18,10 @@ const HomeContent = () =>{
           <Link to="/list-students">Gerenciar alunos</Link>
         </div>
         <div>
-          <Link to="/list-students">Gerenciar treinos</Link>
+          <Link to="/list-training">Gerenciar treinos</Link>
         </div>
         <div>
-          <Link to="/list-students">Gerenciar turmas</Link>
+          <Link to="/list-class">Gerenciar turmas</Link>
         </div>
       </div>
     </div>
