@@ -1,3 +1,12 @@
-.all {
-  display: flex;
+.card-bgColor {
+  background-color: #f0f0f0; 
 }
+
+.rounded-card {
+  border-radius: 10px; 
+}
+
+.pagination {
+  margin-top: 20px; 
+}
+

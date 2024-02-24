@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loginContainer {
+    margin-right: 20px; /* Espaçamento entre o formulário e a imagem */
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Largura do formulário */
+  }
+  
+  .inputGroup {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  .loginButton {
+    padding: 10px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .imageContainer img {
+    width: 300px; /* Largura da imagem */
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .loginContainer {
+      margin-right: 0;
+      margin-bottom: 20px; /* Adicionando espaço entre o formulário e a imagem em telas menores */
+    }
+  }
+  
