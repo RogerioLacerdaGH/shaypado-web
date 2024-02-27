@@ -13,6 +13,7 @@ import ListStudents from './pages/ListStudents/index.jsx';
 import ListTraining from './pages/ListTraining/index.jsx';
 import ListClass from './pages/ListClass/index.jsx';
 import ListHistoric from './pages/ListHistoric/index.jsx';
+import ManageTraining from './pages/ManageTraining/index.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path ='/list-training' element={<ListTraining/>} />
         <Route path ='/list-class' element={<ListClass/>} />
         <Route path ='/list-historic' element={<ListHistoric/>} />
+        <Route path ='/manage-training' element={<ManageTraining/>} />
       </Route>
     </Routes>
     </BrowserRouter>

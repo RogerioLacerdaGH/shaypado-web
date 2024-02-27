@@ -6,13 +6,13 @@
   }
   
   .loginContainer {
-    margin-right: 20px; /* Espaçamento entre o formulário e a imagem */
+    margin-right: 20px; 
   }
   
   .loginForm {
     display: flex;
     flex-direction: column;
-    width: 300px; /* Largura do formulário */
+    width: 300px; 
   }
   
   .inputGroup {
@@ -25,14 +25,14 @@
   
   .loginButton {
     padding: 10px;
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
+    background-color: #007bff;
+    color: white; 
     border: none;
     cursor: pointer;
   }
   
   .imageContainer img {
-    width: 300px; /* Largura da imagem */
+    width: 300px; 
     height: auto;
   }
   

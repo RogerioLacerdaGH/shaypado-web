@@ -63,5 +63,4 @@ const HistoricCards = () => {
   );
 }
 
-
 export default HistoricCards
