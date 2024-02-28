@@ -1,11 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import styles from './styles.module.css'
 
 const Header = () =>{
   return (
        <>
-       <Navbar bg="dark" data-bs-theme="dark">
+       <Navbar className={styles.all}bg="dark" data-bs-theme="dark">
        <Container>
          <Navbar.Brand href="/">Shaypado</Navbar.Brand>
          <Nav variant="me-auto">
