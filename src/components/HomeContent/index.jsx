@@ -23,6 +23,9 @@ const HomeContent = () =>{
         <div>
           <Link to="/list-class">Gerenciar turmas</Link>
         </div>
+        <div>
+          <Link to="/list-historic">Gerenciar históricos</Link>
+        </div>
       </div>
     </div>
   )
