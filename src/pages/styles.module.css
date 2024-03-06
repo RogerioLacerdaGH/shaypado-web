@@ -1,29 +1,43 @@
 .page{
-  margin-top: 40px;
-  padding: 20px;
   display: flex;
   justify-content: center;
 }
 
 .every{
-  max-width: 1512px;
   background-color: #F4F4F4;
 }
 
 .container{
   display: flex;
-  padding: 20px;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  font-size: 32px;
+}
+.containerCards{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.bordas{
+  border-radius: 40px;
 }
 
 .spaced{
   justify-content: space-between;
 }
 
-.reserse{
+.reverse{
   flex-flow: row-reverse;
-  background-color: blueviolet;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 2rem 0 2rem 0;
 }
 .descricao{
   font-size: 24px;
@@ -59,10 +73,27 @@
   width: 711px;
   height: 762px;
 }
+
+.flexDisplay{
+  display: flex;
+}
+.svgDiv{
+  background-color:#65DBAD ;
+  height: 20px;
+}
+
 .flex{
   display: flex;
   gap: 50px;
   color: white;
   font-size: 24px;
   font-weight: 700;
+}
+
+.gapLeft{
+  margin: 0 2rem 0 0;
+}
+
+.gapRight{
+  margin: 0 0 0 2rem;
 }
