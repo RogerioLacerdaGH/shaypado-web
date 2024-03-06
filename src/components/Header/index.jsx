@@ -1,23 +1,20 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import styles from './styles.module.css'
+import { Link } from 'react-router-dom';
 
-const Header = () =>{
+const Header = () => {
   return (
-       <>
-       <Navbar className={styles.all}bg="dark" data-bs-theme="dark">
-       <Container>
-         <Navbar.Brand href="/">Shaypado</Navbar.Brand>
-         <Nav variant="me-auto">
-           <Nav.Link href="/home">Home</Nav.Link>
-           <Nav.Link href="/">Landing Page</Nav.Link>
-           <Nav.Link href="/login">Login</Nav.Link>
-         </Nav>
-       </Container>
-     </Navbar>
-     </>
-      
+    <div>
+      <div className={styles.barra}>.</div>
+      <div className={styles.headerAll}>
+        <div className={styles.logo}>
+          <Link to="/home"><h1>Home</h1></Link>
+        </div>
+        <div className={styles.flex}>
+          <Link to="/login"><h1>Login</h1></Link>
+          <Link to="/"><h1>ladingpage</h1></Link>
+        </div>
+      </div>
+    </div>
   );
 }
 
