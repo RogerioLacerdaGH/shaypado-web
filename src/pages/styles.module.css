@@ -7,7 +7,7 @@
 
 .every{
   max-width: 1512px;
-  background-color: whitesmoke;
+  background-color: #F4F4F4;
 }
 
 .container{
@@ -25,15 +25,16 @@
   flex-flow: row-reverse;
   background-color: blueviolet;
 }
-
+.descricao{
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 40px;
+}
 .loginBtn{
   background-color: #008560;
   width: 225px;
   height: 81px;
   border-radius: 16px;
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
 
   display: flex;
   align-items: center;
@@ -44,9 +45,6 @@
   width: 243px;
   height: 81px;
   border-radius: 16px;
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
 
   display: flex;
   align-items: center;
@@ -58,8 +56,13 @@
 }
 
 .imgDiv {
+  width: 711px;
+  height: 762px;
 }
 .flex{
   display: flex;
   gap: 50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
 }

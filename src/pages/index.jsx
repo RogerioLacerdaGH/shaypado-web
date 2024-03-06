@@ -15,9 +15,9 @@ const LadingPage = () => {
             <div className={styles.container}>
               <div className={styles.infoContainer}>
                 <h1>SHAYPADO</h1>
-                <p>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p className={styles.descricao}>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <div className={styles.flex}>
-                  <Link className={styles.downloadBtn} to="/home">Baixe o app</Link>
+                  <Link className={styles.downloadBtn} to="/home">Baixe o aplicativo</Link>
                   <Link className={styles.loginBtn} to="/login">Login</Link>
                 </div>
 
