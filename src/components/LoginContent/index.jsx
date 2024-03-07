@@ -21,7 +21,7 @@ function LoginContent() {
             <input
               type="text"
               id="email"
-              placeholder="Digite seu e-mail"
+              placeholder="Insira seu e-mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -31,7 +31,7 @@ function LoginContent() {
             <input
               type="password"
               id="password"
-              placeholder="Digite sua senha"
+              placeholder="Insira sua senha"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -39,15 +39,11 @@ function LoginContent() {
           <div className={styles.forgotPassword}>
             <Link to="/forgot-password">Esqueceu a senha?</Link>
           </div>
-          <Link to={"/home"}>
-          <button type="submit" className={styles.loginButton}>
-            Login
-          </button>
-          </Link>
+          <div className={styles.flex}>
+                  <Link className={styles.loginBtn} to="/login">Login</Link>
+                  <Link className={styles.downloadBtn} to="/home">Cadastre-se</Link>
+                </div>
         </form>
-      </div>
-      <div className={styles.imageContainer}>
-        <img src={sete} alt="Foto" />
       </div>
     </div>
   );

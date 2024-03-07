@@ -1,50 +1,68 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 480px;
+  padding: 50px;
+}
+
+.loginContainer {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.loginBtn{
+  background-color: #008560;
+  width: 100px;
+  height: 40px;
+  border-radius: 16px;
   
-  .loginContainer {
-    margin-right: 20px; 
-  }
-  
-  .loginForm {
-    display: flex;
-    flex-direction: column;
-    width: 300px; 
-  }
-  
-  .inputGroup {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    margin-bottom: 5px;
-  }
-  
-  .loginButton {
-    padding: 10px;
-    background-color: #007bff;
-    color: white; 
-    border: none;
-    cursor: pointer;
-  }
-  
-  .imageContainer img {
-    width: 300px; 
-    height: auto;
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .loginContainer {
-      margin-right: 0;
-      margin-bottom: 20px; /* Adicionando espaço entre o formulário e a imagem em telas menores */
-    }
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex{
+  display: flex;
+  gap: 50px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.downloadBtn{
+  background-color: #008560;
+  width: 100px;
+  height: 40px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  position: right;
+  width: 50%;
+}
+
+.imgDiv {
+  width: 711px;
+  height: 762px;
+}
+
