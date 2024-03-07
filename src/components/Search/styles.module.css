@@ -1,0 +1,15 @@
+.allContainer {
+  background-color: hsl(163, 100%, 26%);
+  padding: 1rem;
+}
+.allContainer h2{
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.allContainer input{
+  width: 99%;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+}
