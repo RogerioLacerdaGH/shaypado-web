@@ -1,17 +1,20 @@
 .container {
+  background-color: #F4F4F4;
   display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  height: 480px;
-  padding: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 1.5rem 3rem 1.5rem;
 }
 
 .loginContainer {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  width: 400px;
+  width: 40%;
+  height: 100%;
+  margin-bottom: 7rem;
+}
+.loginContainer h1 {
+  font-size: 62px;
+  margin-bottom: 3rem;
+  font-weight: 800;
 }
 
 .loginForm {
@@ -25,35 +28,45 @@
   flex-direction: column;
   gap: 5px;
 }
+.inputGroup label {
+  font-size: 28px;
+  font-weight: 700;
+}
+.inputGroup input {
+  border: none;
+  min-height: 72px;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 16px;
+}
 
 .loginBtn{
   background-color: #008560;
-  width: 100px;
-  height: 40px;
+  width: 225px;
+  height: 81px;
   border-radius: 16px;
-  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.downloadBtn{
+  background-color: #008560;
+  width: 243px;
+  height: 81px;
+  border-radius: 16px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .flex{
+  gap: 15px;
   display: flex;
-  gap: 50px;
   color: white;
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 700;
-}
-
-.downloadBtn{
-  background-color: #008560;
-  width: 100px;
-  height: 40px;
-  border-radius: 16px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .imageContainer {
@@ -66,3 +79,15 @@
   height: 762px;
 }
 
+.gap{
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.forgotPassword{
+  margin-bottom: 1.5rem;
+  color: #008560;
+  font-weight: 600;
+  font-size: 20px;
+}
