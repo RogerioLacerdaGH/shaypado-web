@@ -1,26 +1,29 @@
-.card-bgColor {
-  background-color: #ff0000; 
-}
-
-.rounded-card {
-  border-radius: 40px; 
-  padding: 20px;
-}
-
-.pagination {
-  margin-top: 20px; 
-}
-
-.card-container {
+.cardsContainer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 50%;
+  align-self: center;
 }
-
-.card {
-  margin-bottom: 20px; 
+.cardList{
+  padding: 10% 0 10% 0;
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column;
 }
+.card{
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
 
-.card-img {
-  border-radius: 50%; 
+  min-height: 25rem;
+  min-width: 22rem;
+  
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.card svg {
+  margin: 2rem 0 2rem 0;
 }
