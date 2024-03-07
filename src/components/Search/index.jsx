@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-const Search = ({ setSearchTerm }) => {
+const Search = ({ title, placeholder, setSearchTerm }) => {
   const handleSearch = (event) => {
     const searchTerm = event.target.value.trim(); // Remover espaços em branco no início e no final
     setSearchTerm(searchTerm);
@@ -9,10 +9,10 @@ const Search = ({ setSearchTerm }) => {
 
   return (
     <div className={styles.allContainer}>
-      <h2>Buscar por aluno</h2>
+      <h2>{title}</h2>
       <input
         type="text"
-        placeholder="Digite o nome/nome completo do aluno que você deseja pesquisar"
+        placeholder={placeholder}
         onChange={handleSearch}
       />
     </div>

@@ -54,7 +54,7 @@ const StudentCards = () => {
 
   return (
     <div className={styles.container}>
-      <Search setSearchTerm={setSearchTerm} />
+      <Search setSearchTerm={setSearchTerm} title="Buscar por aluno:" placeholder="Digite o nome/nome completo do aluno desejado" />
 
       <div className={styles.cardList}>
         <div className={styles.cardsContainer}>{renderStudents()}</div>
