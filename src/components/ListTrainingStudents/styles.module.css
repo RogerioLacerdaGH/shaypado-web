@@ -1,0 +1,31 @@
+/* styles.module.css */
+
+.all {
+  background-color: white;
+  border-radius: 0 1rem 0 0;
+  margin-top: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+  height: calc(100vh - 100px - 3.5rem); /* Calcula a altura da tela menos a altura do cabeçalho */
+}
+
+.studentContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Adiciona uma linha divisória entre os estudantes */
+}
+
+.circle {
+  margin-right: 10px; /* Espaçamento entre o círculo e o texto */
+}
+
+.nickname {
+  margin: 0;
+  font-size: 1.2em; /* Tamanho da fonte do nickname */
+}
+
+.fullname {
+  margin: 0;
+  font-size: 1em; /* Tamanho da fonte do nome completo */
+}
