@@ -1,4 +1,59 @@
+.all {
+  padding: 1rem 2rem 1rem 1rem;
+  flex: 1;
+}
+
+.containerSetup{
+  display: flex;
+  justify-content: space-between;
+}
+.calendarContainer{
+  display: flex;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+
+  min-width: 25rem;
+}
+.measuresContainer{
+  display: flex;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 40rem;
+}
+
+.pizzaContainer{
+  background-color: white;
+  border-radius: 1rem;
+  margin: 2rem 0 0 0;
+  padding: 0 3rem 0 0;
+}
+.linearContainer{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 2rem 0 0 0;
+  width: 43rem;
+  padding: 2rem 0 2rem 2rem;
+}
+
+.bigGraph {
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  display: flex;
+  padding-top: 1rem;
+}
+
 .flex {
   display: flex;
   gap: 40px;
+
 }
