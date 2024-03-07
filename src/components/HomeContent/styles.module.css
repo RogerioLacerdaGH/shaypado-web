@@ -1,3 +1,35 @@
-.teste {
-  background-color: blueviolet;
+.titleDiv{
+  background-color: #008560;
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  height: 7rem;
+  align-items: center;
+  display: flex;
+  padding-left: 1rem;
+}
+
+.container{
+  padding: 10% 5% 10% 5%;
+  background-color: #F4F4F4;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card{
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+
+  min-height: 25rem;
+  min-width: 22rem;
+  
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.card svg {
+  margin: 2rem 0 2rem 0;
 }
