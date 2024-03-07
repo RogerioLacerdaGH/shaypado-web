@@ -2,6 +2,7 @@ import perfil from '../../assets/profire-300x300.png';
 import React, { useState } from 'react';
 import styles from './styles.module.css';
 import Search from '../Search';
+import { Link } from 'react-router-dom'
 
 const StudentCards = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,12 +42,12 @@ const StudentCards = () => {
     } else {
       const currentNames = filteredNames.slice(currentIndex, currentIndex + 4);
       return currentNames.map((name, index) => (
-        <div key={index} className={styles.card}>
+        <Link to="/manage-student" className={styles.card} key={index}>
           <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="100" cy="100" r="100" fill="#C2C2C2" />
           </svg>
           <h2>{name}</h2>
-        </div>
+        </Link>
       ));
     }
   };
