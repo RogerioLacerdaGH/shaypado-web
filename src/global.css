@@ -9,6 +9,38 @@ a {
 a:visited {
   color: inherit;
 }
+html{
+  margin: 0;
+  padding: 0;
+}
 body{
   background-color: #F4F4F4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Estilizando o polegar (handle) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #ddd; /* Cor do polegar */
+  border-radius: 4px; /* Borda do polegar */
+}
+
+/* Estilizando a área de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Cor de fundo */
+}
+
+/* Estilizando o botão de seta (aparece no início ou no final da barra de rolagem) */
+::-webkit-scrollbar-button {
+  display: none; /* Oculta o botão de seta */
+}
+
+/* Estilizando as bordas da barra de rolagem */
+::-webkit-scrollbar-corner {
+  background-color: transparent; /* Cor de fundo */
 }
