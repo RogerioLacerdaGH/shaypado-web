@@ -1,6 +1,7 @@
 import styles from './styles.module.css'
 import { Link } from 'react-router-dom';
-import sete from '../assets/img-700x700.jpg';
+import sete from '../assets/img-700x700.png';
+import seteXcinco from '../assets/img-700x500.png';
 import quatro from '../assets/img-450x450.png';
 import Header from '../components/Header';
 
@@ -60,21 +61,21 @@ const LadingPage = () => {
 
             <div className={styles.reverse}>
               <div>
-                <img src={sete} alt="fotão" />
+                <img src={seteXcinco} alt="fotão" />
               </div>
               <div className={styles.gapLeft}>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </p>
               </div>
             </div>
 
             <div className={styles.container}>
               <div>
-                <img src={sete} alt="fotão" />
+                <img src={seteXcinco} alt="fotão" />
               </div>
               <div className={styles.gapRight}>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               </div>
             </div>
           </section>
