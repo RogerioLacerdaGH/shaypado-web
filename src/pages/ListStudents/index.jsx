@@ -1,15 +1,11 @@
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import Search from '../../components/Search';
 import StudentCards from '../../components/StudentCards';
 
 const ListStudents = () => {
-  return(
+  return (
     <div>
-      <Header/>
-      <Search/>
-      <StudentCards/>
-      <Footer/>
+      <Header />
+      <StudentCards />
     </div>
   );
 }
