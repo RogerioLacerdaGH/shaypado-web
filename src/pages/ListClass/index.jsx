@@ -4,12 +4,10 @@ import Search from '../../components/Search';
 import ClassCards from '../../components/ClassCards';
 
 const ListClass = () => {
-  return(
+  return (
     <div>
-      <Header/>
-      <Search/>
-      <ClassCards/>
-      <Footer/>
+      <Header />
+      <ClassCards />
     </div>
   );
 }

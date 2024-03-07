@@ -4,12 +4,10 @@ import Search from '../../components/Search';
 import TrainingCards from '../../components/TrainingCards';
 
 const ListTraining = () => {
-  return(
+  return (
     <div>
-      <Header/>
-      <Search/>
-      <TrainingCards/>
-      <Footer/>
+      <Header />
+      <TrainingCards />
     </div>
   );
 }

@@ -1,13 +1,20 @@
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import ListContent from '../../components/ListContent';
+import ListTrainingStudents from '../../components/ListTrainingStudents/index';
+import TrainingEdit from '../../components/TrainingEdit';
 
 const ManageTraining = () => {
-  return(
+  const style = {
+    display: "flex",
+    gap: "1rem",
+  };
+
+  return (
     <div>
-      <Header/>
-      <ListContent/>
-      <Footer/>
+      <Header />
+      <div style={style}>
+        <ListTrainingStudents />
+        <TrainingEdit />
+      </div>
     </div>
   );
 }
