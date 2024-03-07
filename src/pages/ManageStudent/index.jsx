@@ -1,4 +1,3 @@
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import StudentContent from '../../components/StudentContent';
 import StudentInfo from '../../components/StudentInfo';
@@ -6,17 +5,16 @@ import StudentInfo from '../../components/StudentInfo';
 const ManageStudent = () => {
   const style = {
     display: "flex",
-    gap: "100px",
+    gap: "1rem",
   };
 
   return (
     <div>
-      <Header/>
+      <Header />
       <div style={style}>
-        <StudentInfo/>
-        <StudentContent/>
+        <StudentInfo />
+        <StudentContent />
       </div>
-      <Footer/>
     </div>
   );
 }
