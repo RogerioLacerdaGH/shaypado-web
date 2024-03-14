@@ -38,6 +38,8 @@
   background-color: white;
   font-size: 20px;
   border-radius: 16px;
+  outline: none;
+  padding: 0 1rem 0 1rem;
 }
 
 .loginBtn{

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <div>
-      <div className={styles.barra}>.</div>
       <div className={styles.headerAll}>
         <div className={styles.logo}>
           <Link to="/home"><svg width="148" height="24" viewBox="0 0 148 24" fill="none" xmlns="http://www.w3.org/2000/svg">

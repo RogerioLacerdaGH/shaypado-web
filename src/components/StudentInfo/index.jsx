@@ -1,7 +1,14 @@
+import React, { useState } from 'react';
 import styles from './styles.module.css'
 import { Link } from 'react-router-dom'
 
 const StudentInfo = () => {
+  const [showStudentInfo, setShowStudentInfo] = useState(false);
+
+  const toggleStudentInfo = () => {
+    setShowStudentInfo(!showStudentInfo);
+  };
+
   return (
     <div className={styles.all}>
 
@@ -39,12 +46,41 @@ const StudentInfo = () => {
         </div>
       </div>
 
-      <div className={styles.linha}>
-        <h1>Ficha</h1>
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="40" height="40" rx="8" fill="#65DBAD" />
-          <path d="M11.8701 14.165L10.1001 15.945L20.0001 25.835L29.9001 15.935L28.1301 14.165L20.0001 22.295L11.8701 14.165Z" fill="white" />
-        </svg>
+      <div className={styles.ficha}>
+        <div className={styles.fichaTitle}>
+          <h1>Ficha</h1>
+          <svg
+            className={`${styles.svgIcon} ${showStudentInfo ? styles.rotated : ''}`}
+            width="40" height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={toggleStudentInfo}
+          >
+            <rect width="40" height="40" rx="8" fill="#65DBAD" />
+            <path d="M11.8701 14.165L10.1001 15.945L20.0001 25.835L29.9001 15.935L28.1301 14.165L20.0001 22.295L11.8701 14.165Z" fill="white" />
+          </svg>
+        </div>
+
+        {showStudentInfo && (
+          <div className={styles.studentInfo}>
+            <p>Altura: 0000cm</p>
+            <p>Idade: 00 anos</p>
+            <p>Peso: 00 kg</p>
+            <p>Possui experiência: Sim</p>
+            <p>É fumante: Sim</p>
+            <p>Problemas na coluna: Sim</p>
+            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
+            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
+            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
+            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
+            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
+            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
+            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
+
+            <Link></Link>
+          </div>
+        )}
       </div>
 
       <div className={styles.linha}>
