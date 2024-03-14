@@ -16,6 +16,7 @@ import ManageTraining from './pages/ManageTraining/index.jsx';
 import ManageStudent from './pages/ManageStudent/index.jsx'
 
 import './global.css';
+import ManageClass from './pages/ManageClass/index.jsx';
 
 const Private = ({ Item }) => {
   const { signed } = useAuth();
@@ -38,6 +39,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/list-historic' element={<ListHistoric />} />
           <Route path='/manage-training' element={<ManageTraining />} />
           <Route path='/manage-student' element={<ManageStudent />} />
+          <Route path='/manage-class' element={<ManageClass />} />
         </Route>
       </Routes>
     </BrowserRouter>

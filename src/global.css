@@ -25,6 +25,9 @@ button{
   font-weight: 700;
   cursor: pointer;
 }
+svg{
+  cursor: pointer;
+}
 
 /* Estilizando a barra de rolagem */
 ::-webkit-scrollbar {

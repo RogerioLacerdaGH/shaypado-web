@@ -30,14 +30,14 @@ const ClassEdit = () => {
 
       <div className={styles.titleTraining}>
         <h1>
-          Treino X
+          Turma Y
         </h1>
       </div>
       <div className={styles.exerciceList}>
         <div className={styles.exerciceContainer}>
           <div>
-            <h2>Supiro reto</h2>
-            <p>3x12</p>
+            <h2>Treino superiores</h2>
+            <p>Segunda</p>
           </div>
 
           <div className={styles.icons}>
@@ -57,8 +57,8 @@ const ClassEdit = () => {
 
         <div className={styles.exerciceContainer}>
           <div>
-            <h2>Voador</h2>
-            <p>3x10</p>
+            <h2>Treino inferiores</h2>
+            <p>Terça</p>
           </div>
 
           <div className={styles.icons}>
@@ -78,8 +78,8 @@ const ClassEdit = () => {
 
         <div className={styles.exerciceContainer}>
           <div>
-            <h2>Crucifixo</h2>
-            <p>3x12</p>
+            <h2>Treino de Cardio</h2>
+            <p>Quinta</p>
           </div>
 
           <div className={styles.icons}>

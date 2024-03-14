@@ -1,4 +1,6 @@
+import ClassEdit from '../../components/ClassEdit';
 import Header from '../../components/Header';
+import ListClassStudents from '../../components/ListClassStudents';
 import ListTrainingStudents from '../../components/ListTrainingStudents/index';
 import TrainingEdit from '../../components/TrainingEdit';
 
@@ -12,8 +14,8 @@ const ManageClass = () => {
     <div>
       <Header />
       <div style={style}>
-        <ListTrainingStudents />
-        <TrainingEdit />
+        <ListClassStudents />
+        <ClassEdit />
       </div>
     </div>
   );

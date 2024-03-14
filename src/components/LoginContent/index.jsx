@@ -9,6 +9,11 @@ function LoginContent() {
   const [password, setPassword] = useState('');
   const { signin } = useAuth(); //hook
   const navigate = useNavigate();
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const validateForm = () => {
+    setIsFormValid(email.trim() !== '' && password.trim() !== ''); // Verifica se os campos não estão vazios
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,7 +41,10 @@ function LoginContent() {
                 id="email"
                 placeholder="Insira seu e-mail"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  validateForm(); // Chama a validação sempre que o valor do campo de e-mail mudar
+                }}
               />
             </div>
             <div className={styles.inputGroup}>
@@ -46,7 +54,10 @@ function LoginContent() {
                 id="password"
                 placeholder="Insira sua senha"
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                  validateForm(); // Chama a validação sempre que o valor do campo de senha mudar
+                }}
               />
             </div>
           </div>
@@ -54,7 +65,7 @@ function LoginContent() {
             <Link to="/forgot-password">Esqueceu a senha?</Link>
           </div>
           <div className={styles.flex}>
-            <button type="submit" className={styles.loginBtn}>Login</button>
+            <button type="submit" className={styles.loginBtn} disabled={!isFormValid}>Login</button>
             <Link className={styles.downloadBtn} to="/home">Cadastre-se</Link>
           </div>
         </form>
