@@ -15,6 +15,7 @@ export const login = async (email, password) => {
   if (response.ok) {
     const data = await response.json();
     localStorage.setItem('authToken', data.token);
+    // Armazenar outras informações de autenticação, como ID do usuário, tipo de usuário, etc.
     return data;
   } else {
     throw new Error('Login failed');
