@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import styles from './styles.module.css'
-import Header from '../Header'
 import { Link } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 
