@@ -49,7 +49,9 @@ const LadingPage = () => {
                   <path d="M488.749 80.0111C475.767 80.0111 466.031 70.5878 461.347 59.5131C458.302 52.5832 457.365 44.7791 458.168 37.2988C459.942 21.8848 470.816 4.88411 488.749 4.88411C504.575 4.88411 515.348 17.9342 518.727 31.9881C520.969 41.0551 520.266 51.3851 516.486 59.8693C511.467 71.0736 502.099 80.0111 488.749 80.0111ZM488.883 61.877C493.098 61.877 497.08 57.5701 498.853 53.7167C501.898 46.7868 502.032 38.8532 499.188 32.0529C498.151 29.3328 496.511 26.8393 494.169 25.0259C492.898 23.8925 491.225 23.1153 489.485 22.9858C487.745 22.7591 485.872 23.4392 484.466 24.4754C481.99 26.0621 480.251 28.5556 479.08 31.1785C475.901 38.2055 475.901 46.3658 478.946 53.3928C480.552 57.1168 484.299 61.877 488.883 61.877Z" fill="#005C42" />
                 </svg>
 
-                <p className={styles.descricao}>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p className={styles.descricao}>
+                  Uma forma prática, rápida, fácil e divertida de praticar exercícios e ter uma vida mais saudável. Entre no ‘shape’ com nosso aplicativo Shaypado!!
+                </p>
                 <div className={styles.flex}>
                   <Link className={styles.downloadBtn} to="/home">Baixe o aplicativo</Link>
                   <Link className={styles.loginBtn} to="/login">Login</Link>
