@@ -1,9 +1,8 @@
 .container {
   background-color: #F4F4F4;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 3rem 1.5rem 0 1.5rem;
 }
 
 .loginContainer {
@@ -76,9 +75,8 @@
   width: 50%;
 }
 
-.imgDiv {
-  width: 711px;
-  height: 762px;
+.imgDiv img{
+  width: 40rem;
 }
 
 .gap{
@@ -92,4 +90,30 @@
   color: #008560;
   font-weight: 600;
   font-size: 20px;
+}
+
+.headerAll{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  color: #005C42;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 0 20px 0 20px;
+  min-height: 66px;
+}
+.flexHeader {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+.logo{
+  align-items: center;
+  display: flex;
+}
+
+.secondSection{
+  display: flex;
+  padding: 3rem 5rem 0 1.5rem;
+  justify-content: space-between;
 }

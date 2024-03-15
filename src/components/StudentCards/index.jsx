@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const StudentCards = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');
-  const names = ["aluno1", "aluno2", "aluno3", "aluno4", "aluno5", "aluno6", "aluno7", "aluno 8", "aluno 9", "aluno 10"];
+  const names = ["Rogério Lacerda", "Pedro Medeiros", "Gabriel Viana", "Ana Beatriz", "Pedro Vinícius"];
 
   const handleNext = () => {
     if (currentIndex < names.length - 1) {

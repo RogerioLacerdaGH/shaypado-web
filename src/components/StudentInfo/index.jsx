@@ -41,8 +41,8 @@ const StudentInfo = () => {
         </div>
 
         <div>
-          <h2>Ciclano de beltrano</h2>
-          <p>ciclano@gmail.com</p>
+          <h2>Rogério Lacerda</h2>
+          <p>exemplo@gmail.com</p>
         </div>
       </div>
 
@@ -64,20 +64,15 @@ const StudentInfo = () => {
 
         {showStudentInfo && (
           <div className={styles.studentInfo}>
-            <p>Altura: 0000cm</p>
-            <p>Idade: 00 anos</p>
-            <p>Peso: 00 kg</p>
+            <p>Altura: 172cm</p>
+            <p>Idade: 23 anos</p>
+            <p>Peso: 65 kg</p>
             <p>Possui experiência: Sim</p>
             <p>É fumante: Sim</p>
             <p>Problemas na coluna: Sim</p>
-            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
-            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
-            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
-            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
-            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
-            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
-            <p>Problemas de saúde: Os problemas são: xxxxxxxxxxxxxxxxxxxx</p>
-
+            <p>Problemas de saúde: Os problemas são:</p>
+            <p>Ombro inflamado</p>
+            <p>Joelho dolorido</p>
             <Link></Link>
           </div>
         )}
