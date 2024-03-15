@@ -19,8 +19,12 @@ const Header = () => {
           </Link>
         </div>
         <div className={styles.flex}>
-          <Link to="/login"><h1>Login</h1></Link>
-          <Link to="/"><h1>ladingpage</h1></Link>
+          <Link to="/list-students"><h1>Alunos</h1></Link>
+          <Link to="/list-class"><h1>Turmas</h1></Link>
+          <Link to="/list-training"><h1>Treinos</h1></Link>
+          <svg width="50" height="50" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="100" fill="#C2C2C2" />
+          </svg>
         </div>
       </div>
     </div>
