@@ -8,24 +8,23 @@ const API_URL = 'http://localhost:3001';
 
 const HomeContent = () => {
   const [profileData, setProfileData] = useState([]);
+  console.log(localStorage);
 
   useEffect(() => {
     const fetchData = async () => {
       const profileId = localStorage.getItem('id');
-      const response = await axios.get(`http://localhost:3001/trainer_profile/trainerProfiler/${profileId}`);
+      const response = await axios.get(`http://localhost:3001/users/${profileId}`);
       setProfileData(response.data);
     };
     fetchData();
   }, []);
-
-  console.log(profileData);
 
   return (
     <div className={styles.teste}>
 
       <div className={styles.titleDiv}>
         <h2>
-          Bem vindo,
+          Bem vindo, {profileData.name}
         </h2>
       </div>
 
