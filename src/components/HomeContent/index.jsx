@@ -1,15 +1,31 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import styles from './styles.module.css'
 import { Link } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 
+const API_URL = 'http://localhost:3001';
+
 const HomeContent = () => {
+  const [profileData, setProfileData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const profileId = localStorage.getItem('id');
+      const response = await axios.get(`http://localhost:3001/trainer_profile/trainerProfiler/${profileId}`);
+      setProfileData(response.data);
+    };
+    fetchData();
+  }, []);
+
+  console.log(profileData);
+
   return (
     <div className={styles.teste}>
 
       <div className={styles.titleDiv}>
         <h2>
-          Bem vindo, Ciclano ;)
+          Bem vindo,
         </h2>
       </div>
 
