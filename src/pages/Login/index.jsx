@@ -5,9 +5,8 @@ import LoginContent from '../../components/LoginContent'
 const Login = () => {
   return (
     <div>
-      <Header/>
-      <LoginContent/>
-      <Footer/>
+      <Header />
+      <LoginContent />
     </div>
   )
 }

@@ -5,8 +5,10 @@
   border-radius: 0 1rem 0 0;
   margin-top: 1rem;
   padding: 1rem 2rem 1rem 2rem;
-  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
-  height: calc(100vh - 100px - 3.5rem); /* Calcula a altura da tela menos a altura do cabeçalho */
+  width: 21rem;
+  height: 50rem;
+  max-height: calc(100vh - 2rem); /* Altura máxima igual ao restante da tela */
+  overflow-y: auto;
 }
 
 .studentContainer {
